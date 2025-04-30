@@ -1,0 +1,9 @@
+<p>updateuser works!</p>
+<h1>User Register</h1>
+<form #userData="ngForm" (ngSubmit) = "updateUser(userData)">
+UserName:<input type="text"  [(ngModel)] = "users.name" name="name"><br>
+Email:<input type="email"  [(ngModel)] = "users.email" name="email"><br>
+password:<input type="password"  [(ngModel)] = "users.password" name="password"><br>
+address:<input type="text"  [(ngModel)] = "users.address" name="address"><br><br>
+<button type="submit">Update</button>
+</form>
